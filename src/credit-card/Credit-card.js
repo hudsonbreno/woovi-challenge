@@ -1,45 +1,58 @@
-import logo from './assets/images/logo.png';
-import protect from './assets/images/protect.png';
-import copy from './assets/images/copy.png';
+import logo from '../assets/images/logo.png';
+import protect from '../assets/images/protect.png';
+import { useNavigate } from 'react-router-dom';
+import './Credit-card.css';
 
-import './Pix-and-credit.css';
+const navigate = useNavigate();
 
-function App() {
+const handleNavigate = (path) => {
+  navigate(path)
+}
+
+function Credit_card() {
   return (
     <div className="credit-cart">
       <header className="credit-card-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
+        <div className="logo-div">
+          <img src={logo} className="App-logo" alt="logo" />
+        </div>
+        <p className="title">
           João, pague o restante de 1x no cartão
         </p>
         
-        <div className='data'>
+          <div className='data'>
             <div className='input-data'>
-                <p>Nome completo</p>
+                <p className='p-input-data'>Nome completo</p>
                 <input type="text" placeholder='Nome Completo'/>
             </div>
             <div className='input-data'>
-                <p>CPF</p>
+                <p className="p-input-data">CPF</p>
                 <input type="text" placeholder='CPF'/>
             </div>
             <div className='input-data'>
-                <p>Número do cartão</p>
+                <p className="p-input-data">Número do cartão</p>
                 <input type="text" placeholder='Número do cartão'/>
             </div>
-            <div className='input-data'>
-                <p>Vencimento</p>
-                <input type="text" placeholder='Vencimento'/>
+            <div className='div-vencimento-cvv '>
+              <div className='input-data'>
+                  <p className="p-input-data">Vencimento</p>
+                  <input type="text" placeholder='Vencimento'/>
+              </div>
+              <div className='input-data'>
+                  <p className='p-input-data'>CVV</p>
+                  <input type="text" placeholder='CVV'/>
+              </div>
             </div>
             <div className='input-data'>
-                <p>CVV</p>
-                <input type="text" placeholder='CVV'/>
-            </div>
-            <div className='input-data'>
-                <p>Parcelas</p>
-                <input type="select" placeholder='Parcelas>
+                <p className="p-input-data">Parcelas</p>
+                <input type="select" placeholder='Parcelas'/>
             </div>
 
         </div>
+
+        <button className='pay' onClick={() => handleNavigate('/conclusion')}>
+          Pagar
+        </button>
 
         <div className='check-list'>
           <div className='check-list-1'>
@@ -55,7 +68,7 @@ function App() {
         <hr></hr>
 
           <div className='how-it-works'>
-'           <div>
+           <div>
               <p> CET: 0,5%</p>
               <div>Total: R$30.600,00</div>
             </div>
@@ -74,4 +87,4 @@ function App() {
   );
 }
 
-export default App;
+export default Credit_card;

@@ -1,6 +1,6 @@
-import logo from './assets/images/logo.png';
-import protect from './assets/images/protect.png';
-import copy from './assets/images/copy.png';
+import logo from '../assets/images/logo.png';
+import protect from '../assets/images/protect.png';
+import copy from '../assets/images/copy.png';
 
 import './Pix-and-credit.css';
 

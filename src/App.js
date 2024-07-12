@@ -1,54 +1,17 @@
-import logo from './assets/images/logo.png';
-import protect from './assets/images/protect.png'
-import './App.css';
+import Payment_method from "./payment-method/Payment-method.js";
+import Pix_and_credit_cart from "./pix-and-credit-card/Pix-and-credit.js";
+import Credit_card from "./credit-card/Credit-card.js"
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p className='title'>
-          João, como você quer pagar?
-        </p>
-        <div className="pix">
-          <p><b>1x</b> R$ 30.500,00</p>
-          <div className="below-pix"> Ganhe <b>3%</b> de Cashback</div>
-          <div className=''></div>
-        </div>
-
-        <div className="pix-installments">
-          <div>
-            <p><b>2x</b> R$ 15.300,00</p>
-            <div className="total-value"> Total: R$ 30.600,00</div>
-          </div>
-          <div>
-            <p><b>3x</b> R$ 15.300,00</p>
-            <div className="total-value"> Total: R$ 30.600,00</div>
-          </div>
-          <div>
-            <p><b>4x</b> R$ 15.300,00</p>
-            <div className="total-value"> Total: R$ 30.600,00</div>
-          </div>
-          <div>
-            <p><b>5x</b> R$ 15.300,00</p>
-            <div className="total-value"> Total: R$ 30.600,00</div>
-          </div>
-          <div>
-            <p><b>6x</b> R$ 15.300,00</p>
-            <div className="total-value"> Total: R$ 30.600,00</div>
-          </div>
-          <div>
-            <p><b>7x</b> R$ 15.300,00</p>
-            <div className="total-value"> Total: R$ 30.600,00</div>
-          </div>
-        </div>
-      </header>
-      <footer>
-        <img src={protect} className='protect' alt="Protect"/>
-        <p>Pagamento 100% seguro via: </p>
-        <img src={logo} className="logo-footer"></img>
-      </footer>
-    </div>
+      <Router>
+        <Routes>
+        <Route path="/" element={<Payment_method />} exact ></Route>
+        <Route path="/pix_and_credit_cart" element={<Pix_and_credit_cart />}></Route>
+        <Route path="/credit-card" element={<Credit_card />}></Route>
+        </Routes>
+      </Router>
   );
 }
 

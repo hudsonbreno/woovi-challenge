@@ -1,9 +1,18 @@
 body{
   width: 464px;
+  margin: 16px;
 }
 
+.logo-div{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
 .App-logo{
-  width: 123.51px;
+  width: 100%;
   height: 36.65px;
   display: flex;
   flex-direction: column;
@@ -27,6 +36,25 @@ p{
   color: #4D4D4D;
 }
 
+.pix{
+  border: 2px solid #E5E5E5;
+  padding-left: 16px;
+}
+
+.pix-name{
+  font-family: "Nunito";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: #E5E5E5;
+  width: 67px;
+  height: 27px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 100px;
+}
+
 .below-pix{
   font-family: "Nunito";
   font-weight: 600;
@@ -37,6 +65,26 @@ p{
 
 .below-pix b{
   font-weight: 800;
+}
+
+.cashback{
+  
+}
+
+.blue-tag{
+  font-family: "Nunito";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.blue-tag b{
+  font-weight: 800;
+}
+
+.pix-installments{
+  margin-top: 34px;
+  border: 2px solid #E5E5E5;
 }
 
 

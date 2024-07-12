@@ -1,0 +1,97 @@
+.credit-cart{
+  width: 464px;
+  padding-right: 18px;
+}
+
+.App-logo{
+  width: 123.51px;
+  height: 36.65px;
+  padding-top: 36px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.title{
+  padding-top: 40.35px;
+  width: 422px;
+  height: 66px;
+  text-align: center;
+  font-family: "Nunito";
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 32.74px;
+}
+
+p{
+  font-family: "Nunito";
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 32.74px;
+  color: #4D4D4D;
+}
+
+.data{
+  padding-top: 28px;
+
+}
+
+.input-data{
+  border: 2px solid #E5E5E5;
+  border-radius: 8px;
+  margin-bottom: 28px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.p-input-data{
+  height: 19px;
+  position: absolute;
+  top:-12px;
+  left: 20px;
+  font-family: "Nunito";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19.1px;
+  color:#4D4D4D;
+  border: 3px solid #fff;
+  background-color: #fff;
+}
+
+.input-data input{
+  margin-left: 20px;
+  font-family: "Nunito";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24.55px;
+  color: #4D4D4D;
+  outline: none;
+  border: 0px solid #fff;
+}
+
+.div-vencimento-cvv{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.div-vencimento-cvv .input-data{
+  width: 200px;
+}
+.div-vencimento-cvv input{
+  width: 80%;
+}
+
+.pay{
+  width: 427px;
+  height: 39px;
+  border-radius: 8px;
+  background-color: #133A6F;
+  color:#FFFFFF;
+  font-family: "Nunito";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24.55px;
+}
